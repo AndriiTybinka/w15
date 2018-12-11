@@ -1,0 +1,6 @@
+FROM python:2
+COPY ./w15.sh/ /opt/
+
+WORKDIR /opt/
+
+CMD ["./w15.sh"]
