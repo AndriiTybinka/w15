@@ -1,6 +1,9 @@
-FROM python:2
-COPY ./w15.sh/ /opt/
+FROM ubuntu:18.10
+
+RUN apt-get update
+
+COPY ./*.sh /opt/
 
 WORKDIR /opt/
 
-CMD ["./w15.sh"]
+ENTRYPOINT ["./w15.sh"]
