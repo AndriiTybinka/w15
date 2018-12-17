@@ -1,0 +1,9 @@
+FROM debian:buster
+
+RUN apt-get update
+
+COPY ./p15.sh /opt/
+
+WORKDIR /opt/
+
+ENTRYPOINT ["./p15.sh"]
